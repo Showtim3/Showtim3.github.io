@@ -1,0 +1,58 @@
+//.active {
+//  background-color: red;
+//}
+
+.navigation-list {
+  position: fixed;
+  bottom: 3rem;
+  left: 18%;
+  li{
+    padding: 0.1rem;
+  }
+  .circle{
+    border-radius: 50%;
+    display: inline-block;
+    min-width: 0.8rem;
+    min-height: 0.8rem;
+    position: relative;
+    color: white;
+  }
+
+  .circle1{ background-color: red;color:red;box-shadow: 0 0 50px red;}
+  .circle2{ background-color: blue;box-shadow: 0 0 5px blue;}
+  .circle3{ background-color: green;box-shadow: 0 0 5px green;}
+  .circle4{ background-color: blueviolet;box-shadow: 0 0 5px blueviolet;}
+  .circle5{ background-color: midnightblue;box-shadow: 0 0 5px midnightblue;}
+  .name{
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .name1{color: red;}
+  .name2{color: blue}
+  .name3{color: green}
+  .name4{color: blueviolet}
+  .name5{color: midnightblue}
+  a{
+    //border-radius: 50%;
+    //display: block;
+    //min-width: 0.8rem;
+    //min-height: 0.8rem;
+    //position: relative;
+    //color: white;
+  }
+}
+.active{
+  background-color: #ffc800;
+    color: black;
+}
+nav{
+  background-color: #bb3030 !important;
+}
+.nav-wrapper{
+  text-align: center;
+  a{
+    font-size: 1.5rem;
+    padding: 0 2rem;
+  }
+}
+

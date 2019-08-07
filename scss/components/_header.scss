@@ -1,0 +1,134 @@
+.header-container {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.header-wrapper {
+  display: inline-block;
+}
+.portfolio{
+  text-align: center;
+  padding: 5rem 0 0;
+  h1{
+    margin: 0;
+    padding: 0;
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+
+letter-spacing: 2.5rem;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6rem 1% 0;
+  justify-content: center;
+
+  &-box1 {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+
+    &-img {
+      img {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+      }
+    }
+
+    &-text {
+      padding-top: 4rem;
+
+      &-name {
+        span {
+          color: rgba(0, 0, 0, 1);
+          font-size: 2rem;
+        }
+      }
+
+      &-college {
+        padding-top: 1rem;
+        span {
+          color: rgba(0, 0, 0, 0.7);
+          font-size: 1.5rem;
+        }
+      }
+
+      &-location {
+        padding-top: 1rem;
+
+        span {
+          color: rgba(0, 0, 0, 0.7);
+          font-size: 1.5rem;
+
+        }
+      }
+
+      &-profile {
+        padding-top: 1rem;
+
+        span {
+          color: rgba(0, 0, 0, 0.7);
+          font-size: 1.5rem ;
+
+        }
+      }
+      &-env{
+        padding-top: 1rem;
+        span:first-child{
+          font-size: 1.5rem;
+          color: black;
+        }
+        span{
+          line-height: 2.2rem;
+          font-size: 1.5rem;
+          color: rgba(0,0,0,0.7);
+        }
+      }
+    }
+  }
+
+  &-box2 {
+    border-left: 4px solid red;
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    padding-left: 1%;
+
+    &-about {
+
+      background-image: url("../assets/new.png");
+      background-position: center;
+      background-size: cover;
+      padding: 10rem 0 10rem 3rem;
+
+      span {
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, 0.8);
+        letter-spacing: 0.4rem;
+        word-spacing: 0.6rem;
+        line-height: 3rem;
+      }
+    }
+
+    &-quote {
+      padding-left: 2rem;
+      padding-top: 1rem;
+      span {
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.3);
+        font-size: 3rem;
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+}
+
+.strike {
+  text-decoration: line-through;
+}

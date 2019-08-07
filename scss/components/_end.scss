@@ -1,0 +1,29 @@
+.end-container{
+  background-color: #e6e6e6;
+}
+
+.end-heading{
+  text-align: center;
+  padding: 12rem 0;
+  &-wrapper{
+    background-color: white;
+    display: inline-block;
+    padding: 1rem;
+    box-shadow: 0 0 30px red;
+    span{
+      font-size: 3.5rem;
+      background-image: linear-gradient(to right, blue, red);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+}
+.end-image{
+  text-align: center;
+}
+.end-text{
+  text-align: center;
+  span{
+    font-size: 3rem;
+  }
+}
