@@ -27,3 +27,40 @@
     font-size: 3rem;
   }
 }
+
+.profile-links{
+  text-align: center;
+  padding: 2rem 0 4rem;
+}
+.profile-link{
+  &-title{
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  a{
+    font-size: 1rem;
+  }
+}
+.profile-center{
+display: inline-block;
+  text-align: left;
+}
+
+@media (min-width: 300px) and (max-width: 650px) {
+  .end-heading{
+    padding: 6rem 0;
+  }
+  .end-heading{
+    &-wrapper{
+      span{
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+  .end-image{
+    img{
+      width: 50%;
+    }
+  }
+}

@@ -4,6 +4,13 @@
   font-size: 10px;
   font-family: 'Rubik', sans-serif; }
 
+@media (max-width: 650px) {
+  * {
+    padding: 0;
+    margin: 0;
+    font-size: 16px !important;
+    font-family: 'Rubik', sans-serif; } }
+
 .header-container {
   background-size: cover;
   background-position: center;
@@ -12,10 +19,32 @@
 .header-wrapper {
   display: inline-block; }
 
-.portfolio {
+.navbarUl {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.navbarMobile {
+  background-color: #bb3030;
+  position: fixed;
+  width: 100%;
+  padding: 1rem;
+  z-index: 100;
+  text-align: center; }
+  .navbarMobile i {
+    padding: 0;
+    font-size: 3rem;
+    color: white; }
+
+.hamMenu {
+  text-align: left;
+  display: inline-block;
+  float: left; }
+
+.portfolio, .portfolio-mobile {
   text-align: center;
   padding: 5rem 0 0; }
-  .portfolio h1 {
+  .portfolio h1, .portfolio-mobile h1 {
     margin: 0;
     padding: 0;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
@@ -23,6 +52,14 @@
     -webkit-background-clip: text;
     color: transparent;
     display: inline-block; }
+
+.portfolio-mobile {
+  padding: 0; }
+  .portfolio-mobile h1 {
+    background-image: none;
+    color: white;
+    display: inline-block;
+    letter-spacing: 1.6rem; }
 
 .header {
   display: flex;
@@ -95,6 +132,32 @@
 .strike {
   text-decoration: line-through; }
 
+@media (min-width: 300px) and (max-width: 650px) {
+  .header-wrapper {
+    padding-top: 6rem; }
+  .header {
+    padding-top: 0; }
+  .header-box1 {
+    width: 100%; }
+  .header-box1-img img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+    box-shadow: 0 0 5px blueviolet; }
+  .header-box2 {
+    width: 90%; }
+    .header-box2-about {
+      padding: 5rem 0 5rem 1rem; }
+      .header-box2-about span {
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, 0.8);
+        letter-spacing: 0.2rem;
+        word-spacing: 0.4rem;
+        line-height: 1.8rem; }
+    .header-box2-quote span {
+      font-size: 1.8rem !important; } }
+
 .skills-container {
   border: 3px solid red;
   min-height: 50vh;
@@ -147,6 +210,34 @@
     .key-skill-description span {
       font-size: 1.2rem;
       font-family: Rubik,sans-serif; }
+
+@media (min-width: 300px) and (max-width: 650px) {
+  .skills-heading {
+    padding: 6rem 0; }
+    .skills-heading-wrapper span {
+      font-size: 1.5rem !important; }
+  .key-skill {
+    width: 46%;
+    padding: 0.2rem;
+    border: 0;
+    box-shadow: 0 0 5px red;
+    margin: 0.5rem;
+    text-align: center;
+    min-height: 0; }
+    .key-skill-icon {
+      padding-top: 1rem; }
+      .key-skill-icon i {
+        font-size: 2.5rem !important; }
+    .key-skill-title {
+      padding-top: 2rem; }
+      .key-skill-title span {
+        font-weight: bold;
+        font-size: 1.2rem !important; }
+    .key-skill-description {
+      padding-top: 1rem; }
+      .key-skill-description span {
+        font-size: 1.2rem;
+        font-family: Rubik,sans-serif; } }
 
 .tech-container {
   background-color: #e6e6e6;
@@ -222,6 +313,26 @@
       .web-tech-text-description ul li {
         font-size: 1.2rem; }
 
+@media (min-width: 300px) and (max-width: 650px) {
+  .tech-container {
+    padding-bottom: 1rem; }
+  .tech-heading {
+    padding: 6rem 0; }
+  .tech-heading-wrapper span {
+    font-size: 1.5rem !important; }
+  .language-text, .web-tech-text {
+    width: 100%;
+    padding: 0 4%; }
+  .languages-heading, .web-technologies-heading {
+    padding-left: 0;
+    text-align: center; }
+  .language-icon, .web-tech-icon {
+    width: 100%;
+    text-align: center; }
+    .language-icon img, .web-tech-icon img {
+      max-width: 6rem;
+      max-height: 7rem; } }
+
 .projects-container {
   background-color: #e6e6e6; }
 
@@ -274,6 +385,55 @@
 .indicators {
   background-color: gray; }
 
+@media (min-width: 300px) and (max-width: 650px) {
+  .projects-heading {
+    padding: 0; }
+  .projects-heading-wrapper span {
+    font-size: 1.5rem !important; }
+  .project:first-child {
+    padding-top: 6rem; }
+  .project-text, .project-description {
+    width: 100%;
+    padding: 0 4%; } }
+
+.education-container {
+  background-color: #e6e6e6; }
+
+.education-heading {
+  text-align: center;
+  padding: 8rem 0; }
+  .education-heading-wrapper {
+    background-color: white;
+    display: inline-block;
+    padding: 1rem;
+    box-shadow: 0 0 30px red; }
+    .education-heading-wrapper span {
+      font-size: 3.5rem;
+      background-image: linear-gradient(to right, blue, red);
+      -webkit-background-clip: text;
+      color: transparent; }
+
+.courses-collapse {
+  width: 80%;
+  margin: 0 auto; }
+  .courses-collapse ul {
+    cursor: pointer;
+    margin: 0; }
+    .courses-collapse ul li {
+      cursor: pointer; }
+
+.collapsible-header {
+  cursor: pointer; }
+  .collapsible-header span {
+    font-size: 1.6rem;
+    cursor: pointer; }
+
+.collapsible-body {
+  background-color: #bb3030; }
+  .collapsible-body span {
+    font-size: 1.2rem;
+    color: white; }
+
 .end-container {
   background-color: #e6e6e6; }
 
@@ -298,6 +458,29 @@
   text-align: center; }
   .end-text span {
     font-size: 3rem; }
+
+.profile-links {
+  text-align: center;
+  padding: 2rem 0 4rem; }
+
+.profile-link-title {
+  text-align: center;
+  font-size: 1.2rem; }
+
+.profile-link a {
+  font-size: 1rem; }
+
+.profile-center {
+  display: inline-block;
+  text-align: left; }
+
+@media (min-width: 300px) and (max-width: 650px) {
+  .end-heading {
+    padding: 6rem 0; }
+  .end-heading-wrapper span {
+    font-size: 1.5rem !important; }
+  .end-image img {
+    width: 50%; } }
 
 .navigation-list {
   position: fixed;

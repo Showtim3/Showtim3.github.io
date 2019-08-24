@@ -64,3 +64,44 @@
     }
   }
 }
+
+@media (min-width: 300px) and (max-width: 650px) {
+  .skills-heading{
+    padding: 6rem 0;
+    &-wrapper{
+      span{
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+  .key-skill {
+    width: 46%;
+    padding: 0.2rem;
+    border: 0;
+    box-shadow: 0 0 5px red;
+    margin: 0.5rem;
+    text-align: center;
+    min-height: 0;
+    &-icon {
+      padding-top: 1rem;
+      i {
+        font-size: 2.5rem !important;
+      }
+    }
+
+    &-title {
+      padding-top: 2rem;
+      span {
+        font-weight: bold;
+        font-size: 1.2rem !important;
+      }
+    }
+    &-description {
+      padding-top: 1rem;
+      span {
+        font-size: 1.2rem;
+        font-family: Rubik,sans-serif;
+      }
+    }
+  }
+}

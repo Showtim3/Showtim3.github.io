@@ -64,3 +64,24 @@
 .indicators{
   background-color: gray;
 }
+
+
+@media (min-width: 300px) and (max-width: 650px) {
+  .projects-heading{
+    padding: 0;
+  }
+  .projects-heading{
+    &-wrapper{
+      span{
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+  .project:first-child{
+    padding-top: 6rem;
+  }
+  .project-text, .project-description{
+    width: 100%;
+    padding: 0 4%;
+  }
+}

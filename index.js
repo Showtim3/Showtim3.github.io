@@ -9,6 +9,11 @@ $(document).ready(function(){
     $('.scrollspy').scrollSpy();
     $('.modal').modal();
     $('.tooltipped').tooltip();
+    $('.sidenav').sidenav();
+    $('.collapsible').collapsible();
+
+
+
 
 
     // $('.ml2').each(function(){

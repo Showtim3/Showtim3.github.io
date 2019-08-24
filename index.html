@@ -16,13 +16,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <title>Portfolio | Rishabh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=yes">
+
 </head>
 <body>
-<div class="navbar-fixed">
+<div class="navbar-fixed hide-on-med-and-down">
     <nav>
         <div class="nav-wrapper">
-            <div class="brand-logo center">
-            <ul class="center">
+            <ul class="left navbarUl">
                 <li><a href="#header">Introduction</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#tech">Technology</a></li>
@@ -30,13 +31,27 @@
                 <li><a href="#end">Conclusion</a></li>
             </ul>
         </div>
-        </div>
     </nav>
 </div>
 
+<div class="navbarMobile hide-on-large-only">
+    <div class="hamMenu"><a href="#" data-target="slide-out" class="sidenav-trigger navMobile"><i class="fa fa-hamburger"></i></a></div>
+    <div class="portfolio-mobile">
+        <h1>PORTFOLIO</h1>
+    </div>
+</div>
+
+<ul id="slide-out" class="sidenav show-on-small">
+    <li><a href="#header" data-target="slide-out">Introduction</a></li>
+    <li><a href="#skills" data-target="slide-out">Skills</a></li>
+    <li><a href="#tech">Technology</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#end" class="sidenav-trigger">Conclusion</a></li>
+</ul>
+
 
 <div id="header" class="header-wrapper scrollspy">
-        <div class="portfolio">
+        <div class="portfolio hide-on-med-and-down">
             <h1>PORTFOLIO</h1>
         </div>
         <div class="header">
@@ -551,6 +566,31 @@
         </div>
     </div>
 </div>
+<div id="education" class="education-container scrollspy">
+    <div class="education-heading">
+        <div class="education-heading-wrapper">
+            <span>Education</span>
+        </div>
+    </div>
+    <div class="courses-collapse">
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header"><span>Senior Secondary(click to expand)</span></div>
+            <div class="collapsible-body"><span>I passed 12th class from JM International School, Dwarka from science, non-medical.
+            I topped my batch with 95% in top 4 and 93.8% in top 5</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><span>Higher Secondary</span></div>
+            <div class="collapsible-body"><span>I passed 10th class from DAV Public School, Dwarka.I achieved a CGPA of 9.4</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><span>Coding Blocks</span></div>
+            <div class="collapsible-body"><span>Did a classroom course of Web development with Nodejs course by Ayush Arora sir.</span></div>
+        </li>
+    </ul>
+    </div>
+
+</div>
 <div id="end" class="end-container scrollspy">
     <div class="end-heading">
         <div class="end-heading-wrapper">
@@ -561,11 +601,27 @@
         <img src="./assets/end.jpg" alt="">
     </div>
     <div class="end-text">
-        <span>Haha! Maybe this is all fake, Get in touch, i like being interviewed and tested.</span>
+        <span>Haha! Maybe this is all fake, Get in touch.</span>
     </div>
     <div class="profile-links">
-        <div class="gmail"><span>coolrishabhrawat@gmail.com</span></div>
-        <div class="codechef-profile"><span>www.codechef.com/Showtim3</span></div>
+        <div class="profile-center">
+        <div class="profile-link gmail">
+            <span class="profile-link-title">Gmail</span>
+            <a href="mailto:coolrishabhrawat@gmail.com">coolrishabhrawat@gmail.com</a>
+        </div>
+        <div class="profile-link linkedin">
+            <span class="profile-link-title">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/rishabh-rawat-8a820923/">www.linkedin.com/in/rishabh-rawat-8a820923/</a>
+        </div>
+        <div class="profile-link github">
+            <span class="profile-link-title">Github</span>
+            <a href="https://www.github.com/Showtim3">www.github.com/Showtim3</a>
+        </div>
+        <div class="profile-link codechef">
+            <span class="profile-link-title">Codechef</span>
+            <a href="https://www.codechef.com/users/showtim3">www.codechef.com/showtim3</a>
+        </div>
+        </div>
     </div>
 </div>
 
