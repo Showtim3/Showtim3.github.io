@@ -4,7 +4,7 @@
 
 .end-heading{
   text-align: center;
-  padding: 12rem 0;
+  padding: 8rem 0;
   &-wrapper{
     background-color: white;
     display: inline-block;
@@ -38,7 +38,9 @@
 }
 .profile-link{
   &-title{
-    text-align: center;
+    text-align: left;
+    display: inline-block;
+    width: 8rem;
     font-size: 1.2rem;
   }
 
