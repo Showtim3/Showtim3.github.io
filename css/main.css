@@ -456,15 +456,18 @@
 
 .end-image {
   text-align: center; }
+  .end-image img {
+    max-height: 30rem; }
 
 .end-text {
-  text-align: center; }
+  text-align: center;
+  padding: 3rem 0; }
   .end-text span {
-    font-size: 3rem; }
+    font-size: 2.2rem; }
 
 .profile-links {
   text-align: center;
-  padding: 2rem 0 4rem; }
+  padding: 0 0 4rem; }
 
 .profile-link-title {
   text-align: center;
