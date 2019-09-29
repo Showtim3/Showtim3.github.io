@@ -178,10 +178,10 @@ $(document).ready(function(){
         init();
     } )
 });
-// $(window).on('load',function() {
-//     setTimeout(() =>{
-//     $('#introBox').fadeOut('slow');
-//     $('#portfolio').show();
-//     console.log('Done')},
-//         5000)
-// });
+$(window).on('load',function() {
+    setTimeout(() =>{
+    $('#introBox').fadeOut('slow');
+    $('#portfolio').show();
+    console.log('Done')},
+        5000)
+});

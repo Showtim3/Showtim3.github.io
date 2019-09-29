@@ -666,8 +666,8 @@ nav {
 .nav-wrapper {
   text-align: center; }
   .nav-wrapper a {
-    font-size: 1.5rem;
-    padding: 0 2rem; }
+    font-size: 1.2rem;
+    padding: 0 1.5rem; }
 
 .carousel .carousel-item > img {
   height: 100%; }
@@ -680,7 +680,4 @@ nav {
     width: 98%; } }
 
 #portfolio {
-  display: block; }
-
-#introBox {
   display: none; }
