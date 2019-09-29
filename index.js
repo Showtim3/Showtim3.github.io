@@ -1,12 +1,6 @@
 
 $(document).ready(function(){
     console.log("Hi");
-    //
-    // VANTA.RINGS({
-    //     el: "#introBox",
-    //     backgroundColor: 0x414243,
-    //     color: 0xff0000
-    // })
     $('.carousel').carousel({
         full_width:true,
         indicators:true,
@@ -183,20 +177,11 @@ $(document).ready(function(){
 
         init();
     } )
-    // $('.ml2').each(function(){
-    // $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
 });
-$(window).on('load',function() {
-    // executes when complete page is fully loaded, including all frames, objects and images
-    // $('#portfolio').style.display = 'block';
-    // $('#introBox').style.display = 'none';
-
-    setTimeout(() =>{
-    // $('#introBox').hide();
-    $('#introBox').fadeOut('slow');
-
-    $('#portfolio').show();
-    console.log('Done')},
-        5000)
-
-});
+// $(window).on('load',function() {
+//     setTimeout(() =>{
+//     $('#introBox').fadeOut('slow');
+//     $('#portfolio').show();
+//     console.log('Done')},
+//         5000)
+// });

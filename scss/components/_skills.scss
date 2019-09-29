@@ -74,12 +74,15 @@
       }
     }
   }
+  .key-skills{
+    justify-content: space-around;
+  }
   .key-skill {
-    width: 46%;
+    width: 44%;
     padding: 0.2rem;
     border: 0;
     box-shadow: 0 0 5px red;
-    margin: 0.5rem;
+    margin: 0.2rem;
     text-align: center;
     min-height: 0;
     &-icon {

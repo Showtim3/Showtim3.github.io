@@ -17,7 +17,7 @@
   background-color: #bb3030;
   position: fixed;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0;
   z-index: 100;
   text-align: center;
   i{
@@ -30,6 +30,7 @@
   text-align: left;
   display: inline-block;
   float: left;
+  padding-left: 1rem;
 }
 
 .portfolio,.portfolio-mobile{
@@ -40,7 +41,7 @@
     padding: 0;
     background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
 
-letter-spacing: 2.5rem;
+    letter-spacing: 1rem;
     -webkit-background-clip: text;
     color: transparent;
     display: inline-block;
@@ -52,14 +53,14 @@ letter-spacing: 2.5rem;
   background-image: none;
   color: white;
   display: inline-block;
-  letter-spacing: 1.6rem;
+  letter-spacing: 1rem;
   }
 }
 
 .header {
   display: flex;
   flex-wrap: wrap;
-  padding: 6rem 1% 0;
+  padding: 4rem 1% 0;
   justify-content: center;
 
   &-box1 {
@@ -69,19 +70,19 @@ letter-spacing: 2.5rem;
 
     &-img {
       img {
-        width: 15rem;
-        height: 15rem;
+        width: 12rem;
+        height: 12rem;
         border-radius: 50%;
       }
     }
 
     &-text {
-      padding-top: 4rem;
+      padding-top: 1rem;
 
       &-name {
         span {
           color: rgba(0, 0, 0, 1);
-          font-size: 2rem;
+          font-size: 1.2rem;
         }
       }
 
@@ -89,7 +90,7 @@ letter-spacing: 2.5rem;
         padding-top: 1rem;
         span {
           color: rgba(0, 0, 0, 0.7);
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
       }
 
@@ -98,7 +99,7 @@ letter-spacing: 2.5rem;
 
         span {
           color: rgba(0, 0, 0, 0.7);
-          font-size: 1.5rem;
+          font-size: 1.2rem;
 
         }
       }
@@ -108,19 +109,25 @@ letter-spacing: 2.5rem;
 
         span {
           color: rgba(0, 0, 0, 0.7);
-          font-size: 1.5rem ;
+          font-size: 1.2rem ;
 
+        }
+      }
+      &-resume{
+        padding-top: 1rem;
+        a{
+          font-size: 1.2rem;
         }
       }
       &-env{
         padding-top: 1rem;
         span:first-child{
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           color: black;
         }
         span{
           line-height: 2.2rem;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           color: rgba(0,0,0,0.7);
         }
       }
@@ -138,13 +145,13 @@ letter-spacing: 2.5rem;
       background-image: url("../assets/new.png");
       background-position: center;
       background-size: cover;
-      padding: 10rem 0 10rem 3rem;
+      padding: 3rem 0 3rem 3rem;
 
       span {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: rgba(0, 0, 0, 0.8);
-        letter-spacing: 0.4rem;
-        word-spacing: 0.6rem;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.3rem;
         line-height: 3rem;
       }
     }
@@ -155,7 +162,7 @@ letter-spacing: 2.5rem;
       span {
         font-weight: bold;
         background-color: rgba(0, 0, 0, 0.3);
-        font-size: 3rem;
+        font-size: 2rem;
         color: rgba(0, 0, 0, 0.7);
       }
     }

@@ -144,7 +144,7 @@ canvas {
   background-color: #bb3030;
   position: fixed;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0;
   z-index: 100;
   text-align: center; }
   .navbarMobile i {
@@ -155,7 +155,8 @@ canvas {
 .hamMenu {
   text-align: left;
   display: inline-block;
-  float: left; }
+  float: left;
+  padding-left: 1rem; }
 
 .portfolio, .portfolio-mobile {
   text-align: center;
@@ -164,7 +165,7 @@ canvas {
     margin: 0;
     padding: 0;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
-    letter-spacing: 2.5rem;
+    letter-spacing: 1rem;
     -webkit-background-clip: text;
     color: transparent;
     display: inline-block; }
@@ -175,49 +176,53 @@ canvas {
     background-image: none;
     color: white;
     display: inline-block;
-    letter-spacing: 1.6rem; }
+    letter-spacing: 1rem; }
 
 .header {
   display: flex;
   flex-wrap: wrap;
-  padding: 6rem 1% 0;
+  padding: 4rem 1% 0;
   justify-content: center; }
   .header-box1 {
     display: inline-block;
     width: 25%;
     text-align: center; }
     .header-box1-img img {
-      width: 15rem;
-      height: 15rem;
+      width: 12rem;
+      height: 12rem;
       border-radius: 50%; }
     .header-box1-text {
-      padding-top: 4rem; }
+      padding-top: 1rem; }
       .header-box1-text-name span {
         color: black;
-        font-size: 2rem; }
+        font-size: 1.2rem; }
       .header-box1-text-college {
         padding-top: 1rem; }
         .header-box1-text-college span {
           color: rgba(0, 0, 0, 0.7);
-          font-size: 1.5rem; }
+          font-size: 1.2rem; }
       .header-box1-text-location {
         padding-top: 1rem; }
         .header-box1-text-location span {
           color: rgba(0, 0, 0, 0.7);
-          font-size: 1.5rem; }
+          font-size: 1.2rem; }
       .header-box1-text-profile {
         padding-top: 1rem; }
         .header-box1-text-profile span {
           color: rgba(0, 0, 0, 0.7);
-          font-size: 1.5rem; }
+          font-size: 1.2rem; }
+      .header-box1-text-resume {
+        padding-top: 1rem; }
+        .header-box1-text-resume a {
+          font-size: 1.2rem; }
       .header-box1-text-env {
         padding-top: 1rem; }
         .header-box1-text-env span:first-child {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           color: black; }
         .header-box1-text-env span {
           line-height: 2.2rem;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           color: rgba(0, 0, 0, 0.7); }
   .header-box2 {
     border-left: 4px solid red;
@@ -229,12 +234,12 @@ canvas {
       background-image: url("../assets/new.png");
       background-position: center;
       background-size: cover;
-      padding: 10rem 0 10rem 3rem; }
+      padding: 3rem 0 3rem 3rem; }
       .header-box2-about span {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: rgba(0, 0, 0, 0.8);
-        letter-spacing: 0.4rem;
-        word-spacing: 0.6rem;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.3rem;
         line-height: 3rem; }
     .header-box2-quote {
       padding-left: 2rem;
@@ -242,7 +247,7 @@ canvas {
       .header-box2-quote span {
         font-weight: bold;
         background-color: rgba(0, 0, 0, 0.3);
-        font-size: 3rem;
+        font-size: 2rem;
         color: rgba(0, 0, 0, 0.7); }
 
 .strike {
@@ -332,12 +337,14 @@ canvas {
     padding: 6rem 0; }
     .skills-heading-wrapper span {
       font-size: 1.5rem !important; }
+  .key-skills {
+    justify-content: space-around; }
   .key-skill {
-    width: 46%;
+    width: 44%;
     padding: 0.2rem;
     border: 0;
     box-shadow: 0 0 5px red;
-    margin: 0.5rem;
+    margin: 0.2rem;
     text-align: center;
     min-height: 0; }
     .key-skill-icon {
@@ -665,5 +672,15 @@ nav {
 .carousel .carousel-item > img {
   height: 100%; }
 
+.carousel-slider a {
+  transform: none !important; }
+
+@media (min-width: 300px) and (max-width: 650px) {
+  .carousel-container {
+    width: 98%; } }
+
 #portfolio {
+  display: block; }
+
+#introBox {
   display: none; }
