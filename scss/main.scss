@@ -3,6 +3,8 @@
 @import "base/base";
 @import "base/mixins";
 
+@import "components/intro";
+
 @import "components/header";
 @import "components/skills";
 @import "components/tech";
@@ -10,3 +12,7 @@
 @import "components/education";
 @import "components/end";
 @import "base/carousel";
+
+#portfolio{
+  display: none;
+}
