@@ -19,7 +19,7 @@
 
 .intro-container {
   transform: translate(-50%, -50%);
-  top: 30%;
+  top: 35%;
   left: 50%;
   display: block;
   position: absolute;
@@ -34,33 +34,35 @@ h1 {
   letter-spacing: 2px; }
 
 .title {
-  transform: translateX(-50%) rotate(-10deg);
+  transform: translateX(-50%);
   display: block;
   float: left;
   left: 50%;
   position: relative; }
   .title span {
-    transform: skew(-10deg);
     display: block;
     float: left;
-    text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px, #533d4a 5px 5px, #533d4a 6px 6px;
     min-width: 10px;
     min-height: 10px;
     position: relative;
     font-size: 3rem; }
 
-.title:nth-child(1) {
-  color: red; }
-
-.title:nth-child(2) {
-  color: green; }
-
-.title:nth-child(3) {
-  color: yellow; }
+.title {
+  background-color: white;
+  margin: 5px 0;
+  padding: 0 10px; }
+  .title:nth-child(1) {
+    color: #604fff; }
+  .title:nth-child(2) {
+    background-color: #a260f9;
+    color: black; }
+  .title:nth-child(3) {
+    background-color: #ff67de;
+    color: yellow; }
 
 .spinner {
-  width: 50px;
-  height: 40px;
+  width: 100px;
+  height: 60px;
   text-align: center;
   font-size: 10px;
   position: fixed;
@@ -93,6 +95,18 @@ h1 {
   -webkit-animation-delay: -0.8s;
   animation-delay: -0.8s; }
 
+.spinner .rect6 {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s; }
+
+.spinner .rect7 {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s; }
+
+.spinner .rect8 {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s; }
+
 @-webkit-keyframes sk-stretchdelay {
   0%, 40%, 100% {
     -webkit-transform: scaleY(0.4); }
@@ -106,6 +120,12 @@ h1 {
   20% {
     transform: scaleY(1);
     -webkit-transform: scaleY(1); } }
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black; }
 
 .header-container {
   background-size: cover;
